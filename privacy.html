@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - Bibly</title>
+    <link rel="icon" type="image/png" href="icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F5F2EF;
+            color: #1a1a1a;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        @keyframes slideUpBlur {
+            0% { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+            100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+        .animate-enter {
+            animation: slideUpBlur 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-gray-900 selection:text-white">
+
+<!-- Navbar -->
+<nav class="md:px-12 animate-enter w-full pt-6 pr-6 pb-6 pl-6 relative z-[500]">
+    <div class="flex max-w-7xl mr-auto ml-auto relative items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 group cursor-pointer">
+            <img src="icon.png" alt="Bibly" class="w-10 h-10 rounded-xl shadow-lg shadow-gray-900/10 group-hover:rotate-3 transition-transform duration-300">
+            <span class="font-semibold text-xl tracking-tight text-gray-900">Bibly</span>
+        </a>
+
+        <!-- Right actions -->
+        <div class="flex items-center gap-3 z-[501] relative">
+            <a href="https://bibly.onelink.me/WhWH/biblyapp" class="flex items-center gap-2 bg-gray-900 text-white px-5 py-2.5 rounded-full text-xs md:text-sm font-medium hover:bg-gray-800 transition-all hover:pr-6 duration-300 group shadow-xl shadow-gray-900/10">
+                <iconify-icon icon="lucide:download" width="16" stroke-width="2"></iconify-icon>
+                <span>Installer</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main class="max-w-4xl mx-auto px-6 md:px-12 py-12 lg:py-16">
+
+    <!-- Header -->
+    <div class="animate-enter mb-12">
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-4">
+            Politique de <span class="font-normal italic font-serif">Confidentialité</span>
+        </h1>
+        <p class="text-gray-500 font-medium">Dernière mise à jour : 27 janvier 2026</p>
+    </div>
+
+    <!-- Content -->
+    <div class="animate-enter delay-100 prose prose-gray max-w-none">
+
+        <!-- Section 1 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">1. Introduction</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Bienvenue dans la politique de confidentialité de l'application Bibly. Nous accordons une importance capitale à la protection de votre vie privée et de vos données personnelles. Cette politique explique de manière transparente quelles données nous collectons, comment nous les utilisons, et avec qui elles peuvent être partagées.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+                En utilisant Bibly, vous acceptez les pratiques décrites dans cette politique.
+            </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">2. Responsable du traitement</h2>
+            <p class="text-gray-600 leading-relaxed mb-2">
+                Bibly est une application développée par Charly Klopfenstein.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+                Contact : <a href="mailto:contact@biblyapp.fr" class="text-gray-900 underline hover:no-underline">contact@biblyapp.fr</a>
+            </p>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">3. Données collectées</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">3.1 Données que vous nous fournissez directement</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Lors de l'utilisation de l'application, vous pouvez nous fournir volontairement :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li><strong>Informations de profil :</strong> Prénom, tranche d'âge, dénomination religieuse</li>
+                <li><strong>Préférences spirituelles :</strong> Objectifs spirituels, thèmes préférés, fréquence de prière, relation avec la foi</li>
+                <li><strong>Habitudes :</strong> Temps d'écran, moments préférés pour les notifications</li>
+                <li><strong>Contenu créé :</strong> Versets favoris, collections personnalisées, notes</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">3.2 Données collectées automatiquement</h3>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li><strong>Données d'utilisation :</strong> Progression dans l'application, séries de jours consécutifs (streak), interactions avec les versets</li>
+                <li><strong>Données techniques :</strong> Type d'appareil, version du système d'exploitation, identifiants d'installation (via nos partenaires analytiques)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">3.3 Données traitées par des services tiers</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Certaines données sont transmises à des services tiers pour le fonctionnement de l'application :
+            </p>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+                    <thead>
+                        <tr class="bg-gray-50">
+                            <th class="px-6 py-4 text-left text-sm font-bold text-gray-900 border-b border-gray-100">Service</th>
+                            <th class="px-6 py-4 text-left text-sm font-bold text-gray-900 border-b border-gray-100">Données transmises</th>
+                            <th class="px-6 py-4 text-left text-sm font-bold text-gray-900 border-b border-gray-100">Finalité</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-6 py-4 text-sm text-gray-900 font-medium">Google Gemini AI</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Prénom, profil spirituel, texte des versets</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Générer des explications personnalisées et des résumés de foi</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-6 py-4 text-sm text-gray-900 font-medium">AppsFlyer</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Identifiant d'appareil, événements d'utilisation</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Analyse d'attribution et statistiques anonymisées</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-900 font-medium">RevenueCat</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Identifiant d'achat, statut d'abonnement</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Gestion des achats intégrés et abonnements</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">4. Finalités du traitement</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">Vos données sont utilisées pour :</p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li><strong>Personnaliser votre expérience :</strong> Adapter les versets, prières et contenus à votre profil spirituel</li>
+                <li><strong>Générer du contenu intelligent :</strong> Produire des explications de versets et résumés personnalisés via l'intelligence artificielle</li>
+                <li><strong>Gérer vos abonnements :</strong> Traiter les achats et vérifier votre statut premium</li>
+                <li><strong>Améliorer l'application :</strong> Comprendre l'utilisation globale de l'application via des statistiques agrégées</li>
+                <li><strong>Envoyer des notifications :</strong> Rappels spirituels selon vos préférences horaires</li>
+            </ul>
+        </section>
+
+        <!-- Section 5 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">5. Stockage des données</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">5.1 Stockage local</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                La majorité de vos données sont stockées localement sur votre appareil via AsyncStorage :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>Préférences et paramètres</li>
+                <li>Versets favoris et collections</li>
+                <li>Progression et historique</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">5.2 Stockage externe</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Certaines données sont stockées sur les serveurs de nos partenaires :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li><strong>RevenueCat :</strong> Historique d'abonnement (conservé selon leur politique)</li>
+                <li><strong>AppsFlyer :</strong> Données d'attribution (conservées 24 mois maximum)</li>
+                <li><strong>Google :</strong> Les requêtes à l'API Gemini ne sont pas conservées pour entraîner leurs modèles</li>
+            </ul>
+        </section>
+
+        <!-- Section 6 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Partage des données</h2>
+            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm mb-4">
+                <p class="text-gray-900 font-semibold mb-2">Nous ne vendons jamais vos données personnelles.</p>
+            </div>
+            <p class="text-gray-600 leading-relaxed mb-4">Vos données peuvent être partagées uniquement avec :</p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li><strong>Google LLC</strong> (API Gemini) — pour le traitement IA</li>
+                <li><strong>AppsFlyer Ltd</strong> — pour l'analyse d'attribution</li>
+                <li><strong>RevenueCat Inc</strong> — pour la gestion des abonnements</li>
+                <li><strong>Apple Inc / Google LLC</strong> — pour le traitement des paiements via les stores</li>
+            </ul>
+        </section>
+
+        <!-- Section 7 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">7. Suivi publicitaire et consentement</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">7.1 App Tracking Transparency (iOS)</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Sur iOS, nous demandons votre consentement via la fenêtre ATT (App Tracking Transparency) avant tout suivi à des fins d'attribution. Vous pouvez refuser sans impact sur le fonctionnement de l'application.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">7.2 Finalité du suivi</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">Le suivi via AppsFlyer sert exclusivement à :</p>
+            <ul class="list-disc list-inside text-gray-600 mb-4 space-y-2">
+                <li>Mesurer l'efficacité de nos campagnes d'acquisition</li>
+                <li>Comprendre comment les utilisateurs découvrent Bibly</li>
+            </ul>
+            <p class="text-gray-600 leading-relaxed font-medium">
+                Nous n'utilisons aucune publicité ciblée dans l'application.
+            </p>
+        </section>
+
+        <!-- Section 8 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">8. Achats intégrés</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Les achats (abonnements Bibly Premium) sont traités exclusivement par :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-4 space-y-2">
+                <li>Apple App Store (iOS)</li>
+                <li>Google Play Store (Android)</li>
+            </ul>
+            <p class="text-gray-600 leading-relaxed">
+                Nous n'avons accès à aucune donnée bancaire ou de paiement. Seul le statut de votre abonnement nous est communiqué via RevenueCat.
+            </p>
+        </section>
+
+        <!-- Section 9 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">9. Sécurité</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Nous mettons en oeuvre des mesures appropriées pour protéger vos données :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li>Stockage local chiffré par le système d'exploitation</li>
+                <li>Communications sécurisées (HTTPS) avec tous les services tiers</li>
+                <li>Aucun stockage de mots de passe ou données sensibles sur nos propres serveurs</li>
+            </ul>
+        </section>
+
+        <!-- Section 10 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">10. Vos droits</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Conformément au RGPD et aux lois applicables, vous disposez des droits suivants :
+            </p>
+
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+                    <thead>
+                        <tr class="bg-gray-50">
+                            <th class="px-6 py-4 text-left text-sm font-bold text-gray-900 border-b border-gray-100">Droit</th>
+                            <th class="px-6 py-4 text-left text-sm font-bold text-gray-900 border-b border-gray-100">Comment l'exercer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-6 py-4 text-sm text-gray-900 font-medium">Accès</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Contactez-nous pour obtenir une copie de vos données</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-6 py-4 text-sm text-gray-900 font-medium">Rectification</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Modifiez vos informations dans les paramètres de l'application</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-6 py-4 text-sm text-gray-900 font-medium">Suppression</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Désinstallez l'application pour supprimer toutes les données locales</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-6 py-4 text-sm text-gray-900 font-medium">Opposition au suivi</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Refusez l'ATT sur iOS ou désactivez les identifiants publicitaires</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-900 font-medium">Portabilité</td>
+                            <td class="px-6 py-4 text-sm text-gray-600">Contactez-nous pour exporter vos données</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-gray-600 leading-relaxed">
+                Pour les données détenues par nos partenaires (AppsFlyer, RevenueCat), veuillez consulter leurs politiques respectives ou nous contacter pour faciliter votre demande.
+            </p>
+        </section>
+
+        <!-- Section 11 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">11. Données des mineurs</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Bibly n'est pas destinée aux enfants de moins de 16 ans. Nous ne collectons pas sciemment de données personnelles de mineurs. Si vous êtes parent et pensez que votre enfant nous a fourni des informations, contactez-nous pour les supprimer.
+            </p>
+        </section>
+
+        <!-- Section 12 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">12. Modifications de cette politique</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Nous pouvons mettre à jour cette politique de confidentialité. En cas de modification substantielle, nous vous en informerons via l'application. La date de dernière mise à jour est indiquée en haut de ce document.
+            </p>
+        </section>
+
+        <!-- Section 13 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">13. Contact</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Pour toute question concernant cette politique ou pour exercer vos droits :
+            </p>
+            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                <p class="text-gray-900 font-medium">
+                    Email : <a href="mailto:contact@biblyapp.fr" class="text-gray-900 underline hover:no-underline">contact@biblyapp.fr</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Partner Policies -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Liens des politiques de nos partenaires</h2>
+            <ul class="space-y-3">
+                <li>
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2">
+                        <iconify-icon icon="lucide:external-link" width="16"></iconify-icon>
+                        Google : policies.google.com/privacy
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.appsflyer.com/privacy-policy/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2">
+                        <iconify-icon icon="lucide:external-link" width="16"></iconify-icon>
+                        AppsFlyer : appsflyer.com/privacy-policy
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors flex items-center gap-2">
+                        <iconify-icon icon="lucide:external-link" width="16"></iconify-icon>
+                        RevenueCat : revenuecat.com/privacy
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full max-w-7xl mx-auto px-6 md:px-12 pb-12 pt-12 border-t border-gray-200">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+        <div class="max-w-xs">
+            <a href="index.html" class="flex items-center gap-2 mb-6 opacity-80 hover:opacity-100 transition-opacity">
+                <iconify-icon icon="lucide:cross" width="24" class="text-gray-900"></iconify-icon>
+                <span class="font-bold text-xl tracking-tight text-gray-900">Bibly</span>
+            </a>
+            <p class="text-sm text-gray-500 mb-6 font-medium leading-relaxed">
+                Rejoins la communauté chrétienne qui grandit le plus vite en France. Une approche moderne d'une foi éternelle.
+            </p>
+            <div class="flex gap-3">
+                <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 text-gray-900 flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                    <iconify-icon icon="lucide:instagram" width="16"></iconify-icon>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 text-gray-900 flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                    <iconify-icon icon="lucide:twitter" width="16"></iconify-icon>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-12 lg:gap-24 w-full md:w-auto">
+            <div class="flex flex-col gap-4">
+                <span class="text-xs font-bold text-gray-900 uppercase tracking-wider">Produit</span>
+                <a href="index.html#features" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Fonctionnalités</a>
+                <a href="index.html#premium" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Premium</a>
+                <a href="#" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Pour Églises</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="text-xs font-bold text-gray-900 uppercase tracking-wider">Ressources</span>
+                <a href="#" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Blog</a>
+                <a href="support.html" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Support</a>
+                <a href="#" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Confession de foi</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="text-xs font-bold text-gray-900 uppercase tracking-wider">Légal</span>
+                <a href="privacy.html" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Confidentialité</a>
+                <a href="terms.html" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">CGU</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] text-gray-400 font-medium">
+        <span>© 2024 Bibly App. Tous droits réservés.</span>
+        <div class="flex items-center gap-1">
+            <span>Soli Deo Gloria</span>
+            <iconify-icon icon="lucide:star" width="10"></iconify-icon>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

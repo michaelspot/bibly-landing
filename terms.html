@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales d'Utilisation - Bibly</title>
+    <link rel="icon" type="image/png" href="icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F5F2EF;
+            color: #1a1a1a;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        @keyframes slideUpBlur {
+            0% { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+            100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+        .animate-enter {
+            animation: slideUpBlur 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-gray-900 selection:text-white">
+
+<!-- Navbar -->
+<nav class="md:px-12 animate-enter w-full pt-6 pr-6 pb-6 pl-6 relative z-[500]">
+    <div class="flex max-w-7xl mr-auto ml-auto relative items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 group cursor-pointer">
+            <img src="icon.png" alt="Bibly" class="w-10 h-10 rounded-xl shadow-lg shadow-gray-900/10 group-hover:rotate-3 transition-transform duration-300">
+            <span class="font-semibold text-xl tracking-tight text-gray-900">Bibly</span>
+        </a>
+
+        <!-- Right actions -->
+        <div class="flex items-center gap-3 z-[501] relative">
+            <a href="https://bibly.onelink.me/WhWH/biblyapp" class="flex items-center gap-2 bg-gray-900 text-white px-5 py-2.5 rounded-full text-xs md:text-sm font-medium hover:bg-gray-800 transition-all hover:pr-6 duration-300 group shadow-xl shadow-gray-900/10">
+                <iconify-icon icon="lucide:download" width="16" stroke-width="2"></iconify-icon>
+                <span>Installer</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main class="max-w-4xl mx-auto px-6 md:px-12 py-12 lg:py-16">
+
+    <!-- Header -->
+    <div class="animate-enter mb-12">
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-4">
+            Conditions Générales <span class="font-normal italic font-serif">d'Utilisation</span>
+        </h1>
+        <p class="text-gray-500 font-medium">Dernière mise à jour : 27 janvier 2026</p>
+    </div>
+
+    <!-- Content -->
+    <div class="animate-enter delay-100 prose prose-gray max-w-none">
+
+        <!-- Section 1 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">1. Objet et acceptation</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">1.1 Présentation du service</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Bibly est une application mobile de méditation biblique qui propose :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>Des versets quotidiens personnalisés</li>
+                <li>Des explications de versets générées par intelligence artificielle</li>
+                <li>Des outils de prière et de méditation</li>
+                <li>Des collections et favoris personnels</li>
+                <li>Des widgets et notifications spirituelles</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">1.2 Acceptation des conditions</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                En téléchargeant, installant ou utilisant l'application Bibly, vous reconnaissez avoir lu, compris et accepté sans réserve les présentes Conditions Générales d'Utilisation (« CGU »).
+            </p>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Si vous n'acceptez pas ces conditions, vous ne devez pas utiliser l'application.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">1.3 Capacité juridique</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Vous déclarez être âgé d'au moins 16 ans ou disposer de l'autorisation d'un représentant légal pour utiliser cette application.
+            </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">2. Éditeur de l'application</h2>
+            <p class="text-gray-600 leading-relaxed mb-2">
+                L'application Bibly est éditée par :
+            </p>
+            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                <p class="text-gray-900 font-semibold mb-1">Charly Klopfenstein</p>
+                <p class="text-gray-600">
+                    Contact : <a href="mailto:contact@biblyapp.fr" class="text-gray-900 underline hover:no-underline">contact@biblyapp.fr</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">3. Description du service</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">3.1 Fonctionnalités gratuites</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">L'application propose en accès libre :</p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>Accès à une sélection de versets bibliques</li>
+                <li>Création de collections personnelles</li>
+                <li>Sauvegarde de versets favoris</li>
+                <li>Notifications de rappel spirituel</li>
+                <li>Widget d'affichage de versets</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">3.2 Fonctionnalités premium (Bibly Pro)</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">L'abonnement Bibly Pro donne accès à :</p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>L'intégralité du catalogue de versets et catégories</li>
+                <li>Les explications de versets par intelligence artificielle</li>
+                <li>Les prières personnalisées</li>
+                <li>Le contexte historique des passages bibliques</li>
+                <li>Toutes les fonctionnalités futures premium</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">3.3 Contenu généré par intelligence artificielle</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Certaines fonctionnalités de Bibly utilisent l'intelligence artificielle (Google Gemini) pour générer du contenu personnalisé. Vous reconnaissez et acceptez que :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li>Le contenu généré par IA est fourni à titre informatif et méditatif uniquement</li>
+                <li>Ce contenu ne constitue en aucun cas un conseil théologique, pastoral ou psychologique professionnel</li>
+                <li>Les interprétations proposées peuvent varier et ne représentent pas une doctrine officielle</li>
+                <li>Vous restez seul responsable de l'usage que vous faites de ce contenu</li>
+            </ul>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">4. Propriété intellectuelle</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">4.1 Droits de Bibly</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                L'ensemble des éléments suivants sont la propriété exclusive de Bibly ou de ses concédants :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-4 space-y-2">
+                <li>Le code source et l'architecture technique</li>
+                <li>Le design, l'interface utilisateur et l'identité visuelle</li>
+                <li>Les textes originaux, descriptions et contenus éditoriaux</li>
+                <li>Les algorithmes de personnalisation</li>
+                <li>La marque Bibly et ses logos</li>
+            </ul>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Toute reproduction, modification, distribution ou exploitation non autorisée est strictement interdite.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">4.2 Textes bibliques</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Les textes bibliques cités dans l'application sont issus de traductions dont les droits appartiennent à leurs éditeurs respectifs. Bibly les utilise dans le respect des licences applicables. Ces textes restent la propriété de leurs détenteurs.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">4.3 Contenu utilisateur</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Vous conservez la propriété de tout contenu que vous créez dans l'application (collections, notes personnelles). En utilisant Bibly, vous nous accordez une licence limitée pour stocker ce contenu localement sur votre appareil afin d'assurer le fonctionnement du service.
+            </p>
+        </section>
+
+        <!-- Section 5 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">5. Abonnements et achats intégrés</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">5.1 Offres d'abonnement</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Bibly Pro est disponible sous forme d'abonnement avec différentes formules :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-4 space-y-2">
+                <li>Abonnement hebdomadaire</li>
+                <li>Abonnement mensuel</li>
+                <li>Abonnement annuel (avec ou sans période d'essai gratuit)</li>
+            </ul>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Les tarifs en vigueur sont affichés dans l'application avant tout achat.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">5.2 Période d'essai gratuit</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Certaines offres incluent une période d'essai gratuit (généralement 3 jours). À l'issue de cette période :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>Votre abonnement sera automatiquement converti en abonnement payant</li>
+                <li>Le montant correspondant sera débité de votre compte</li>
+                <li>Vous pouvez annuler à tout moment avant la fin de l'essai pour éviter tout prélèvement</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">5.3 Renouvellement automatique</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Tous les abonnements se renouvellent automatiquement à la fin de chaque période, sauf annulation de votre part au moins 24 heures avant la date de renouvellement.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">5.4 Gestion et annulation</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Les abonnements sont gérés via votre compte Apple (App Store) ou Google (Play Store). Pour annuler :
+            </p>
+            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm mb-4 space-y-3">
+                <div class="flex items-start gap-3">
+                    <iconify-icon icon="lucide:apple" width="20" class="text-gray-900 mt-0.5"></iconify-icon>
+                    <p class="text-gray-600"><strong class="text-gray-900">iOS :</strong> Réglages > [Votre nom] > Abonnements > Bibly</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <iconify-icon icon="lucide:smartphone" width="20" class="text-gray-900 mt-0.5"></iconify-icon>
+                    <p class="text-gray-600"><strong class="text-gray-900">Android :</strong> Google Play Store > Menu > Abonnements > Bibly</p>
+                </div>
+            </div>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                L'annulation prend effet à la fin de la période en cours. Aucun remboursement au prorata ne sera effectué.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">5.5 Traitement des paiements</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Tous les paiements sont traités exclusivement par Apple Inc. ou Google LLC selon la plateforme utilisée. Bibly :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-4 space-y-2">
+                <li>N'a accès à aucune donnée bancaire ou de paiement</li>
+                <li>Ne gère aucun flux financier direct</li>
+                <li>N'est pas responsable des erreurs de facturation des stores</li>
+            </ul>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Pour toute question relative à la facturation, veuillez contacter le support Apple ou Google.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">5.6 Droit de rétractation</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Conformément à l'article L221-28 du Code de la consommation français, le droit de rétractation ne peut être exercé pour les contenus numériques fournis sur un support immatériel dont l'exécution a commencé avec votre accord. En souscrivant à Bibly Pro, vous reconnaissez renoncer expressément à votre droit de rétractation.
+            </p>
+        </section>
+
+        <!-- Section 6 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">6. Règles d'utilisation</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">6.1 Utilisation autorisée</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">Vous vous engagez à utiliser Bibly :</p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>À des fins personnelles et non commerciales</li>
+                <li>De manière conforme aux lois en vigueur</li>
+                <li>Dans le respect de l'esprit bienveillant de l'application</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">6.2 Comportements interdits</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">Il est strictement interdit de :</p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>Reproduire, copier ou redistribuer le contenu de l'application</li>
+                <li>Tenter de décompiler, désassembler ou faire de l'ingénierie inverse</li>
+                <li>Contourner les mesures de protection ou les restrictions d'accès</li>
+                <li>Utiliser l'application à des fins frauduleuses ou illicites</li>
+                <li>Partager un compte premium avec des tiers</li>
+                <li>Utiliser des outils automatisés pour accéder au service</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">6.3 Sanctions</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Tout manquement aux présentes règles peut entraîner la suspension ou la résiliation de votre accès à l'application, sans préjudice des dommages et intérêts qui pourraient être réclamés.
+            </p>
+        </section>
+
+        <!-- Section 7 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">7. Disponibilité et maintenance</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">7.1 Disponibilité du service</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Bibly s'efforce d'assurer une disponibilité continue de l'application. Toutefois, le service peut être temporairement interrompu pour :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>Maintenance technique</li>
+                <li>Mises à jour de l'application</li>
+                <li>Cas de force majeure</li>
+                <li>Problèmes techniques indépendants de notre volonté</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">7.2 Modifications du service</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Bibly se réserve le droit de modifier, suspendre ou interrompre tout ou partie des fonctionnalités à tout moment, avec ou sans préavis. En cas de suppression définitive d'une fonctionnalité premium, les abonnés concernés seront informés.
+            </p>
+        </section>
+
+        <!-- Section 8 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">8. Limitation de responsabilité</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">8.1 Fourniture « en l'état »</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                L'application Bibly est fournie « telle quelle » (« as is »), sans garantie d'aucune sorte, expresse ou implicite.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">8.2 Exclusions de garantie</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Dans les limites autorisées par la loi, Bibly ne garantit pas :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>L'absence d'erreurs, bugs ou interruptions</li>
+                <li>L'exactitude ou l'exhaustivité du contenu proposé</li>
+                <li>La compatibilité avec tous les appareils ou systèmes d'exploitation</li>
+                <li>L'adéquation du service à vos besoins spécifiques</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">8.3 Limitation des dommages</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                En aucun cas Bibly ne pourra être tenu responsable :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>Des dommages indirects, accessoires ou consécutifs</li>
+                <li>De la perte de données stockées localement</li>
+                <li>Des interprétations personnelles faites des textes bibliques ou du contenu généré par IA</li>
+                <li>Des décisions prises sur la base du contenu de l'application</li>
+                <li>Des dommages résultant de l'utilisation de services tiers</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">8.4 Plafond de responsabilité</h3>
+            <p class="text-gray-600 leading-relaxed">
+                La responsabilité totale de Bibly, quelle qu'en soit la cause, est limitée au montant que vous avez effectivement payé pour l'application au cours des 12 derniers mois.
+            </p>
+        </section>
+
+        <!-- Section 9 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">9. Avertissement spirituel et médical</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">9.1 Nature du service</h3>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Bibly est une application de méditation biblique et ne se substitue en aucun cas à :
+            </p>
+            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                <li>Un accompagnement pastoral ou spirituel professionnel</li>
+                <li>Un suivi psychologique ou psychiatrique</li>
+                <li>Un conseil médical ou thérapeutique</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">9.2 Situation de détresse</h3>
+            <div class="bg-amber-50 rounded-2xl p-6 border border-amber-200">
+                <p class="text-amber-900 leading-relaxed">
+                    Si vous êtes en situation de détresse psychologique, nous vous encourageons vivement à consulter un professionnel de santé ou à contacter les services d'urgence appropriés.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 10 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">10. Protection des données</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Le traitement de vos données personnelles est régi par notre <a href="privacy.html" class="text-gray-900 underline hover:no-underline">Politique de Confidentialité</a>, accessible dans l'application et constituant partie intégrante des présentes CGU.
+            </p>
+        </section>
+
+        <!-- Section 11 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">11. Modification des conditions</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">11.1 Évolutions</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Bibly se réserve le droit de modifier les présentes CGU à tout moment pour refléter les évolutions de l'application ou de la réglementation.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">11.2 Notification</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                En cas de modification substantielle, vous serez informé par notification dans l'application ou par tout autre moyen approprié. La date de dernière mise à jour est indiquée en haut de ce document.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">11.3 Acceptation des modifications</h3>
+            <p class="text-gray-600 leading-relaxed">
+                La poursuite de l'utilisation de l'application après notification des modifications vaut acceptation des nouvelles conditions.
+            </p>
+        </section>
+
+        <!-- Section 12 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">12. Résiliation</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">12.1 Résiliation par l'utilisateur</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Vous pouvez cesser d'utiliser Bibly à tout moment en désinstallant l'application. Pour les abonnés, pensez à annuler votre abonnement au préalable.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">12.2 Résiliation par Bibly</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Bibly se réserve le droit de résilier ou suspendre votre accès en cas de violation des présentes CGU, sans préavis ni indemnité.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">12.3 Effets de la résiliation</h3>
+            <p class="text-gray-600 leading-relaxed">
+                La résiliation entraîne la perte d'accès aux fonctionnalités premium. Les données stockées localement seront supprimées avec la désinstallation de l'application.
+            </p>
+        </section>
+
+        <!-- Section 13 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">13. Dispositions générales</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">13.1 Intégralité de l'accord</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Les présentes CGU, ainsi que la Politique de Confidentialité, constituent l'intégralité de l'accord entre vous et Bibly concernant l'utilisation de l'application.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">13.2 Nullité partielle</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Si une disposition des présentes CGU est jugée invalide ou inapplicable, les autres dispositions resteront en vigueur.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">13.3 Renonciation</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Le fait pour Bibly de ne pas exercer un droit prévu aux présentes ne constitue pas une renonciation à ce droit.
+            </p>
+        </section>
+
+        <!-- Section 14 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">14. Droit applicable et juridiction</h2>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">14.1 Droit applicable</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Les présentes CGU sont régies par le droit français.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">14.2 Règlement des litiges</h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                En cas de litige, une solution amiable sera recherchée en priorité. À défaut, les tribunaux français seront seuls compétents.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">14.3 Médiation</h3>
+            <p class="text-gray-600 leading-relaxed">
+                Conformément aux articles L611-1 et suivants du Code de la consommation, vous pouvez recourir gratuitement à un médiateur de la consommation en cas de litige non résolu.
+            </p>
+        </section>
+
+        <!-- Section 15 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">15. Contact</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Pour toute question concernant les présentes Conditions d'Utilisation :
+            </p>
+            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                <p class="text-gray-900 font-medium">
+                    Email : <a href="mailto:contact@biblyapp.fr" class="text-gray-900 underline hover:no-underline">contact@biblyapp.fr</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Acceptance Notice -->
+        <section class="mb-12">
+            <div class="bg-gray-900 rounded-2xl p-6 text-white">
+                <p class="leading-relaxed">
+                    En utilisant Bibly, vous confirmez avoir lu et accepté les présentes Conditions Générales d'Utilisation.
+                </p>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full max-w-7xl mx-auto px-6 md:px-12 pb-12 pt-12 border-t border-gray-200">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+        <div class="max-w-xs">
+            <a href="index.html" class="flex items-center gap-2 mb-6 opacity-80 hover:opacity-100 transition-opacity">
+                <iconify-icon icon="lucide:cross" width="24" class="text-gray-900"></iconify-icon>
+                <span class="font-bold text-xl tracking-tight text-gray-900">Bibly</span>
+            </a>
+            <p class="text-sm text-gray-500 mb-6 font-medium leading-relaxed">
+                Rejoins la communauté chrétienne qui grandit le plus vite en France. Une approche moderne d'une foi éternelle.
+            </p>
+            <div class="flex gap-3">
+                <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 text-gray-900 flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                    <iconify-icon icon="lucide:instagram" width="16"></iconify-icon>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 text-gray-900 flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                    <iconify-icon icon="lucide:twitter" width="16"></iconify-icon>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-12 lg:gap-24 w-full md:w-auto">
+            <div class="flex flex-col gap-4">
+                <span class="text-xs font-bold text-gray-900 uppercase tracking-wider">Produit</span>
+                <a href="index.html#features" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Fonctionnalités</a>
+                <a href="index.html#premium" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Premium</a>
+                <a href="#" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Pour Églises</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="text-xs font-bold text-gray-900 uppercase tracking-wider">Ressources</span>
+                <a href="#" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Blog</a>
+                <a href="support.html" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Support</a>
+                <a href="#" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Confession de foi</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="text-xs font-bold text-gray-900 uppercase tracking-wider">Légal</span>
+                <a href="privacy.html" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Confidentialité</a>
+                <a href="terms.html" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">CGU</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] text-gray-400 font-medium">
+        <span>© 2024 Bibly App. Tous droits réservés.</span>
+        <div class="flex items-center gap-1">
+            <span>Soli Deo Gloria</span>
+            <iconify-icon icon="lucide:star" width="10"></iconify-icon>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
