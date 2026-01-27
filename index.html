@@ -1812,11 +1812,13 @@ document.addEventListener('DOMContentLoaded', function() {
     color: white;
     background: #1F2937;
     border: 2px solid white;
-    padding: 3px 8px;
-    border-radius: 6px;
+    padding: 4px 10px;
+    border-radius: 14px;
     opacity: 0;
     white-space: nowrap;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
 "></div>
 
 <script>
@@ -1833,8 +1835,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function moveTooltip(e) {
-        tooltip.style.left = (e.clientX + 12) + 'px';
-        tooltip.style.top = (e.clientY + 16) + 'px';
+        tooltip.style.transform = 'translate3d(' + (e.clientX + 14) + 'px, ' + (e.clientY + 18) + 'px, 0)';
     }
 
     function showTooltip(e) {
