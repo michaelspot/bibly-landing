@@ -428,10 +428,19 @@
         color: #1a1a1a;
     }
     *, *::before, *::after {
-        cursor: url('/clicker.png') 0 0, auto !important;
+        cursor: none !important;
     }
-    a, button, [role="button"], input[type="submit"], input[type="button"], [onclick], label[for] {
-        cursor: url('/clicker.png') 0 0, pointer !important;
+    #custom-cursor {
+        position: fixed;
+        width: 24px;
+        height: 24px;
+        pointer-events: none;
+        z-index: 999999;
+        background-image: url('/clicker.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translate3d(0, 0, 0);
+        will-change: transform;
     }
     .font-serif {
         font-family: 'Playfair Display', serif;
@@ -477,6 +486,9 @@
 </style>
 </head>
 <body class="antialiased overflow-x-hidden selection:bg-gray-900 selection:text-white">
+
+<!-- Custom Cursor -->
+<div id="custom-cursor"></div>
 
 <!-- Navbar -->
 <nav class="md:px-12 animate-enter w-full pt-6 pr-6 pb-6 pl-6 relative z-[500]">
@@ -1797,6 +1809,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+</script>
+
+<script>
+// Custom cursor that follows mouse (immune to macOS shake-to-locate)
+(function() {
+    const cursor = document.getElementById('custom-cursor');
+    if (!cursor) return;
+
+    document.addEventListener('mousemove', function(e) {
+        cursor.style.transform = 'translate3d(' + e.clientX + 'px, ' + e.clientY + 'px, 0)';
+    });
+
+    document.addEventListener('mouseenter', function() {
+        cursor.style.opacity = '1';
+    });
+
+    document.addEventListener('mouseleave', function() {
+        cursor.style.opacity = '0';
+    });
+})();
 </script>
 
 <!-- C'est parti hover effect -->
