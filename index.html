@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" style="cursor: none !important;">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -422,16 +422,23 @@
 </script>
 
 <style>
-    body {
+    html, body {
         font-family: 'Manrope', sans-serif;
         background-color: #F5F2EF;
         color: #1a1a1a;
+        cursor: none !important;
     }
-    *, *::before, *::after {
+    html *, html *::before, html *::after,
+    body *, body *::before, body *::after,
+    a, button, input, textarea, select, label,
+    [role="button"], [onclick], [tabindex],
+    iframe, video, img, svg, canvas {
         cursor: none !important;
     }
     #custom-cursor {
         position: fixed;
+        left: 0;
+        top: 0;
         width: 24px;
         height: 24px;
         pointer-events: none;
@@ -441,6 +448,7 @@
         background-repeat: no-repeat;
         transform: translate3d(0, 0, 0);
         will-change: transform;
+        opacity: 1;
     }
     .font-serif {
         font-family: 'Playfair Display', serif;
