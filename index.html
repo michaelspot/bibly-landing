@@ -426,10 +426,12 @@
         font-family: 'Manrope', sans-serif;
         background-color: #F5F2EF;
         color: #1a1a1a;
-        cursor: url('clicker.png'), auto;
     }
-    a, button, [role="button"], input[type="submit"], input[type="button"] {
-        cursor: url('clicker.png'), pointer;
+    *, *::before, *::after {
+        cursor: url('/clicker.png') 0 0, auto !important;
+    }
+    a, button, [role="button"], input[type="submit"], input[type="button"], [onclick], label[for] {
+        cursor: url('/clicker.png') 0 0, pointer !important;
     }
     .font-serif {
         font-family: 'Playfair Display', serif;
@@ -1807,11 +1809,14 @@ document.addEventListener('DOMContentLoaded', function() {
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     font-size: 13px;
+    color: white;
     background: #1F2937;
+    border: 2px solid white;
     padding: 3px 8px;
     border-radius: 6px;
     opacity: 0;
     white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 "></div>
 
 <script>
@@ -1823,27 +1828,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const maxI = 10;
     let isHovering = false;
 
-    // Gradient colors from red to orange to yellow
-    const colors = [
-        '#EF4444', // red
-        '#F97316', // orange
-        '#F59E0B', // amber
-        '#FBBF24', // yellow
-    ];
-
-    function getGradientColor(index, total) {
-        const ratio = index / Math.max(total - 1, 1);
-        const colorIndex = Math.min(Math.floor(ratio * (colors.length - 1)), colors.length - 2);
-        return colors[colorIndex + 1] || colors[colors.length - 1];
-    }
-
     function updateText() {
-        let html = "<span style='color:#E5E7EB'>c'est part</span>";
-        for (let i = 0; i < iCount; i++) {
-            const color = getGradientColor(i, maxI);
-            html += "<span style='color:" + color + "'>i</span>";
-        }
-        tooltip.innerHTML = html;
+        tooltip.textContent = "c'est part" + "i".repeat(iCount);
     }
 
     function moveTooltip(e) {
