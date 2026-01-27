@@ -1711,6 +1711,71 @@
     </div>
 </footer>
 
+<!-- Exit Intent Popup -->
+<div id="exit-popup" class="fixed inset-0 z-[9999] hidden items-center justify-center p-4" style="background-color: rgba(0,0,0,0.7); backdrop-filter: blur(4px);">
+    <div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl animate-enter relative">
+        <button id="close-popup" class="absolute top-4 right-4 w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors z-10">
+            <iconify-icon icon="lucide:x" width="20" class="text-gray-600"></iconify-icon>
+        </button>
+        <img src="popup-image.jpg" alt="Bibly App" class="w-full h-auto">
+        <div class="p-8 text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Non, ne pars pas !</h3>
+            <p class="text-gray-600 mb-6">On est sûrs que <strong>Bibly</strong> peut t'aider à grandir.</p>
+            <a href="https://bibly.onelink.me/WhWH/biblyapp" class="inline-flex items-center justify-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-all hover:scale-105 active:scale-95 w-full">
+                <iconify-icon icon="lucide:download" width="20"></iconify-icon>
+                Télécharger gratuitement
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+// Exit Intent Popup
+(function() {
+    let popupShown = false;
+    const popup = document.getElementById('exit-popup');
+    const closeBtn = document.getElementById('close-popup');
+
+    function showPopup() {
+        if (popupShown) return;
+        popupShown = true;
+        popup.classList.remove('hidden');
+        popup.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function hidePopup() {
+        popup.classList.add('hidden');
+        popup.classList.remove('flex');
+        document.body.style.overflow = '';
+    }
+
+    // Detect mouse leaving viewport (toward top - tabs area)
+    document.addEventListener('mouseout', function(e) {
+        if (e.clientY <= 0 && !popupShown) {
+            showPopup();
+        }
+    });
+
+    // Close popup on button click
+    closeBtn.addEventListener('click', hidePopup);
+
+    // Close popup on overlay click
+    popup.addEventListener('click', function(e) {
+        if (e.target === popup) {
+            hidePopup();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !popup.classList.contains('hidden')) {
+            hidePopup();
+        }
+    });
+})();
+</script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const videos = document.querySelectorAll('video');
