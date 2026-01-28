@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bibly</title>
+    <meta name="description" content="Contacte l'équipe Bibly. Nous sommes là pour répondre à tes questions, recevoir tes suggestions et t'accompagner.">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="canonical" href="https://biblyapp.fr/contact">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F5F2EF;
+            color: #1a1a1a;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        @keyframes slideUpBlur {
+            0% { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+            100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+        .animate-enter {
+            animation: slideUpBlur 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+
+        /* Form styles */
+        .form-input {
+            transition: all 0.2s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #1a1a1a;
+            box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.1);
+        }
+
+        /* Success message */
+        .success-message {
+            display: none;
+        }
+        .success-message.show {
+            display: block;
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden selection:bg-gray-900 selection:text-white">
+
+<!-- Navbar -->
+<nav class="md:px-12 animate-enter w-full pt-6 pr-6 pb-6 pl-6 relative z-[500]">
+    <div class="flex max-w-7xl mr-auto ml-auto relative items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 group cursor-pointer">
+            <img src="icon.png" alt="Bibly" class="w-10 h-10 rounded-xl shadow-lg shadow-gray-900/10 group-hover:rotate-3 transition-transform duration-300">
+            <span class="font-semibold text-xl tracking-tight text-gray-900">Bibly</span>
+        </a>
+
+        <!-- Right actions -->
+        <div class="flex items-center gap-3 z-[501] relative">
+            <a href="https://bibly.onelink.me/WhWH/biblyapp" class="flex items-center gap-2 bg-gray-900 text-white px-5 py-2.5 rounded-full text-xs md:text-sm font-medium hover:bg-gray-800 transition-all hover:pr-6 duration-300 group shadow-xl shadow-gray-900/10">
+                <iconify-icon icon="lucide:download" width="16" stroke-width="2"></iconify-icon>
+                <span>Installer</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main class="max-w-3xl mx-auto px-6 md:px-12 py-12 lg:py-16">
+
+    <!-- Header -->
+    <div class="animate-enter mb-12 text-center">
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-4">
+            Écris-nous un <span class="font-normal italic font-serif">message</span>
+        </h1>
+        <p class="text-gray-500 font-medium text-lg max-w-xl mx-auto">
+            Une question, une suggestion ou simplement envie de nous dire bonjour ? Nous lisons chaque message avec attention.
+        </p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="animate-enter delay-100">
+        <form
+            action="https://formspree.io/contact@biblyapp.fr"
+            method="POST"
+            class="bg-white rounded-[2rem] p-8 md:p-10 border border-gray-100 shadow-sm"
+            id="contact-form"
+        >
+            <!-- Name -->
+            <div class="mb-6">
+                <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">
+                    Ton prénom
+                </label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Jean"
+                    class="form-input w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-gray-900 placeholder-gray-400 font-medium"
+                >
+            </div>
+
+            <!-- Email -->
+            <div class="mb-6">
+                <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">
+                    Ton adresse email
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="jean@exemple.com"
+                    class="form-input w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-gray-900 placeholder-gray-400 font-medium"
+                >
+            </div>
+
+            <!-- Subject -->
+            <div class="mb-6">
+                <label for="subject" class="block text-sm font-semibold text-gray-900 mb-2">
+                    Sujet
+                </label>
+                <select
+                    id="subject"
+                    name="subject"
+                    required
+                    class="form-input w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-gray-900 font-medium appearance-none cursor-pointer"
+                >
+                    <option value="" disabled selected>Choisis un sujet</option>
+                    <option value="Question générale">Question générale</option>
+                    <option value="Suggestion">Suggestion d'amélioration</option>
+                    <option value="Bug">Signaler un problème technique</option>
+                    <option value="Partenariat">Proposition de partenariat</option>
+                    <option value="Presse">Demande presse / média</option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </div>
+
+            <!-- Message -->
+            <div class="mb-8">
+                <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">
+                    Ton message
+                </label>
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows="5"
+                    placeholder="Écris ton message ici..."
+                    class="form-input w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-gray-900 placeholder-gray-400 font-medium resize-none"
+                ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+                type="submit"
+                class="w-full flex items-center justify-center gap-2 bg-gray-900 text-white px-6 py-4 rounded-full font-semibold hover:bg-gray-800 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-xl shadow-gray-900/10"
+            >
+                <iconify-icon icon="lucide:send" width="18"></iconify-icon>
+                Envoyer le message
+            </button>
+
+            <p class="text-center text-gray-400 text-sm mt-4">
+                Nous te répondrons dans les plus brefs délais.
+            </p>
+        </form>
+
+        <!-- Success Message (shown after form submission) -->
+        <div id="success-message" class="success-message bg-green-50 border border-green-200 rounded-[2rem] p-8 md:p-10 text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <iconify-icon icon="lucide:check-circle" width="32" class="text-green-600"></iconify-icon>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-3">Message envoyé !</h2>
+            <p class="text-gray-600 mb-6">
+                Merci pour ton message. Nous te répondrons très vite.
+            </p>
+            <a href="index.html" class="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition-all">
+                <iconify-icon icon="lucide:home" width="18"></iconify-icon>
+                Retour à l'accueil
+            </a>
+        </div>
+    </div>
+
+    <!-- Alternative Contact -->
+    <div class="animate-enter delay-200 mt-12">
+        <div class="bg-gray-900 rounded-[2rem] p-8 text-white text-center">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <iconify-icon icon="lucide:mail" width="24" class="text-gray-400"></iconify-icon>
+                <span class="text-gray-400 font-medium">ou directement par email</span>
+            </div>
+            <a href="mailto:contact@biblyapp.fr" class="text-xl font-bold hover:underline">
+                contact@biblyapp.fr
+            </a>
+        </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="animate-enter delay-300 mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- FAQ -->
+        <a href="support.html" class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-shadow group">
+            <div class="w-12 h-12 bg-[#F5F2EF] rounded-xl flex items-center justify-center mb-4">
+                <iconify-icon icon="lucide:help-circle" width="24" class="text-gray-900"></iconify-icon>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">Questions fréquentes</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                Trouve peut-être ta réponse dans notre FAQ avant de nous écrire.
+            </p>
+            <span class="text-gray-900 font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                Voir la FAQ
+                <iconify-icon icon="lucide:arrow-right" width="16"></iconify-icon>
+            </span>
+        </a>
+
+        <!-- Social -->
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+            <div class="w-12 h-12 bg-[#F5F2EF] rounded-xl flex items-center justify-center mb-4">
+                <iconify-icon icon="lucide:users" width="24" class="text-gray-900"></iconify-icon>
+            </div>
+            <h3 class="font-bold text-gray-900 mb-2">Rejoins la communauté</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                Suis-nous sur les réseaux sociaux pour les dernières nouvelles.
+            </p>
+            <div class="flex gap-3">
+                <a href="#" class="w-10 h-10 rounded-full bg-[#F5F2EF] text-gray-900 flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                    <iconify-icon icon="lucide:instagram" width="18"></iconify-icon>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-[#F5F2EF] text-gray-900 flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                    <iconify-icon icon="lucide:twitter" width="18"></iconify-icon>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-[#F5F2EF] text-gray-900 flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                    <iconify-icon icon="lucide:youtube" width="18"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full max-w-7xl mx-auto px-6 md:px-12 pb-12 pt-12 border-t border-gray-200">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+        <div class="max-w-xs">
+            <a href="index.html" class="flex items-center gap-2 mb-6 opacity-80 hover:opacity-100 transition-opacity">
+                <iconify-icon icon="lucide:cross" width="24" class="text-gray-900"></iconify-icon>
+                <span class="font-bold text-xl tracking-tight text-gray-900">Bibly</span>
+            </a>
+            <p class="text-sm text-gray-500 mb-6 font-medium leading-relaxed">
+                Rejoins la communauté chrétienne qui grandit le plus vite en France. Une approche moderne d'une foi éternelle.
+            </p>
+            <div class="flex gap-3">
+                <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 text-gray-900 flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                    <iconify-icon icon="lucide:instagram" width="16"></iconify-icon>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-full bg-white border border-gray-200 text-gray-900 flex items-center justify-center hover:bg-gray-900 hover:text-white transition-colors duration-300">
+                    <iconify-icon icon="lucide:twitter" width="16"></iconify-icon>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-12 lg:gap-24 w-full md:w-auto">
+            <div class="flex flex-col gap-4">
+                <span class="text-xs font-bold text-gray-900 uppercase tracking-wider">Produit</span>
+                <a href="index.html#features" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Fonctionnalités</a>
+                <a href="index.html#premium" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Premium</a>
+                <a href="#" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Pour Églises</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="text-xs font-bold text-gray-900 uppercase tracking-wider">Ressources</span>
+                <a href="#" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Blog</a>
+                <a href="support.html" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Support</a>
+                <a href="contact.html" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Contact</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="text-xs font-bold text-gray-900 uppercase tracking-wider">Légal</span>
+                <a href="privacy.html" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">Confidentialité</a>
+                <a href="terms.html" class="text-sm text-gray-500 hover:text-gray-900 transition-colors font-medium">CGU</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] text-gray-400 font-medium">
+        <span>© 2024 Bibly App. Tous droits réservés.</span>
+        <div class="flex items-center gap-1">
+            <span>Soli Deo Gloria</span>
+            <iconify-icon icon="lucide:star" width="10"></iconify-icon>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Handle form submission with Formspree
+const form = document.getElementById('contact-form');
+const successMessage = document.getElementById('success-message');
+
+form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            form.style.display = 'none';
+            successMessage.classList.add('show');
+        } else {
+            alert('Une erreur est survenue. Réessaie ou contacte-nous directement par email.');
+        }
+    } catch (error) {
+        alert('Une erreur est survenue. Réessaie ou contacte-nous directement par email.');
+    }
+});
+</script>
+
+</body>
+</html>
